@@ -67,7 +67,7 @@ class PostController extends Controller
     {
         $post = Post::findOrFail($id);
 
-        $post->delete($post);
+        $post->delete();
 
         return ['message' => 'The post was deleted'];
     }
